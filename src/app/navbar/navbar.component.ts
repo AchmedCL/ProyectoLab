@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-
+  horarios: Array<string> = ['Horario ayudantes', 'Horario laboratorios', 'Horario salas'];
   ngOnInit(): void {
   }
 
