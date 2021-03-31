@@ -14,6 +14,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--Modulo Avisos-->
         <li class="nav-item">
           <a
             class="nav-link"
@@ -21,38 +22,62 @@
             routerLinkActive="active"
             >Avisos</a
           >
+          <!--Modulo Caja-->
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
+
+        <li ngbDropdown class="d-inline-block nav-item">
+          <button
+            class="btn btn-outline-primary nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
             [routerLink]="['/moduloCaja']"
-            routerLinkActive="active"
-            >Caja</a
           >
+            Caja
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Control Caja</button>
+            <button ngbDropdownItem>Control Impresiones</button>
+          </div>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
+        <!--Modulo Llaves-->
+        <li ngbDropdown class="d-inline-block nav-item">
+          <button
+            class="btn btn-outline-primary nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
             [routerLink]="['/moduloLlaves']"
-            routerLinkActive="active"
-            >Llaves</a
           >
+            Llaves
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Laboratorio</button>
+            <button ngbDropdownItem>Usabilidad</button>
+            <button ngbDropdownItem>Rack</button>
+          </div>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
+        <!--Modulo Documentos-->
+        <li ngbDropdown class="d-inline-block nav-item">
+          <button
+            class="btn btn-outline-primary nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
             [routerLink]="['/moduloDocumentos']"
-            routerLinkActive="active"
-            >Documentos</a
           >
+            Documentos
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Manuales</button>
+            <button ngbDropdownItem>Tutoriales</button>
+            <button ngbDropdownItem>Contraseñas</button>
+          </div>
         </li>
+        <!--Modulo Horarios-->
         <li ngbDropdown class="d-inline-block nav-item">
           <button
             class="btn btn-outline-primary nav-link"
             id="dropdownBasic1"
             ngbDropdownToggle
             [routerLink]="['/moduloHorarios']"
-            routerLinkActive="active"
           >
             Horarios
           </button>
